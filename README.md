@@ -5,7 +5,7 @@ Un système complet de gestion de santé permettant la gestion des patients, mé
 ## 🖥️ Captures d'écran
 
 ### Page de connexion
-![Login Page](screenshots/login.png)
+<img width="316" alt="image" src="https://github.com/user-attachments/assets/6445403e-fce6-4664-8f98-1ccd9f20fd06" />
 - Interface de connexion sécurisée
 - Validation des champs email/mot de passe
 - Messages d'erreur clairs
