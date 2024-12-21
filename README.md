@@ -2,14 +2,38 @@
 
 Un système complet de gestion de santé permettant la gestion des patients, médecins, rendez-vous et médicaments.
 
+## 🖥️ Captures d'écran
+
+### Page de connexion
+![Login Page](screenshots/login.png)
+- Interface de connexion sécurisée
+- Validation des champs email/mot de passe
+- Messages d'erreur clairs
+- Redirection automatique selon le rôle
+
 ## 🚀 Fonctionnalités
 
 - ✅ Authentification multi-rôles (Admin, Médecin, Patient, Accompagnateur)
+- 🔐 Système de connexion sécurisé avec JWT
 - 📊 Interface d'administration complète
 - 👨‍⚕️ Gestion des médecins et leurs patients
 - 🏥 Gestion des rendez-vous
 - 💊 Suivi des médicaments
 - 👥 Gestion des accompagnateurs
+- 📱 Interface responsive (mobile-friendly)
+- 🎨 Design moderne et intuitif
+
+## 📋 Structure du projet
+
+```
+health-management/
+├── server.js          # Serveur Node.js + Express
+├── index.html         # Page principale
+├── style.css          # Styles CSS
+├── script.js          # JavaScript frontend
+├── package.json       # Dépendances
+└── README.md          # Documentation
+```
 
 ## 📋 Prérequis
 
@@ -153,27 +177,65 @@ Ouvrez `index.html` dans votre navigateur
 
 ## 🖥️ Interfaces
 
+### Page de connexion
+- Formulaire de connexion responsive
+- Validation des champs en temps réel
+- Gestion des erreurs de connexion
+- Animation de chargement pendant l'authentification
+
 ### Interface Administrateur
+- Tableau de bord avec statistiques
 - Gestion complète des utilisateurs (CRUD)
 - Vue d'ensemble des médecins, patients et rendez-vous
 - Gestion des médicaments
+- Export des données
 
 ### Interface Médecin
+- Calendrier des rendez-vous
 - Liste de ses patients
-- Gestion des rendez-vous
-- Suivi des prescriptions
+- Gestion des prescriptions
+- Historique des consultations
+- Notes sur les patients
 
 ### Interface Patient
-- Voir ses rendez-vous
-- Consulter ses médicaments
-- Gérer ses accompagnateurs
+- Vue calendrier de ses rendez-vous
+- Liste de ses médicaments actuels
+- Historique médical
+- Gestion de ses accompagnateurs
+- Prise de rendez-vous
 
 ### Interface Accompagnateur
-- Voir les patients suivis
-- Consulter les rendez-vous des patients
-- Voir les médicaments des patients
+- Liste des patients suivis
+- Calendrier des rendez-vous
+- Alertes médicaments
+- Notes de suivi
 
-## 🔒 API Endpoints
+## 💻 Guide d'utilisation
+
+### Connexion
+1. Ouvrez `index.html` dans votre navigateur
+2. Entrez vos identifiants de connexion
+3. Le système vous redirigera automatiquement vers votre interface
+
+### Administration
+1. Connectez-vous avec le compte admin
+2. Accédez aux différentes sections depuis le menu
+3. Utilisez les boutons CRUD pour gérer les utilisateurs
+4. Consultez les statistiques dans le tableau de bord
+
+### Médecins
+1. Connectez-vous avec un compte médecin
+2. Consultez vos rendez-vous du jour
+3. Gérez vos patients et leurs prescriptions
+4. Ajoutez des notes de consultation
+
+### Patients
+1. Connectez-vous avec un compte patient
+2. Consultez vos prochains rendez-vous
+3. Vérifiez vos prescriptions actuelles
+4. Gérez vos accompagnateurs
+
+## 🔐 API Endpoints
 
 ### Authentification
 - POST `/auth` - Connexion utilisateur
@@ -221,3 +283,48 @@ Ouvrez `index.html` dans votre navigateur
 - [ ] Amélioration de la gestion des erreurs
 - [ ] Ajout de tests automatisés
 - [ ] Support des notifications en temps réel
+
+## 🎨 Personnalisation
+
+### Thème
+Modifiez les variables CSS dans `style.css` pour changer les couleurs :
+```css
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+```
+
+### Textes
+Les textes peuvent être modifiés dans les fichiers :
+- `index.html` pour les labels et titres
+- `script.js` pour les messages d'erreur et notifications
+
+## 🔧 Dépannage
+
+### Problèmes courants
+
+1. **Erreur de connexion**
+   - Vérifiez que le serveur est bien démarré
+   - Vérifiez les identifiants dans la base de données
+   - Vérifiez la connexion à la base de données
+
+2. **Page blanche**
+   - Vérifiez la console du navigateur
+   - Assurez-vous que tous les fichiers sont bien chargés
+   - Vérifiez les chemins des fichiers
+
+3. **Erreurs API**
+   - Vérifiez que le port 3001 est libre
+   - Vérifiez les logs du serveur
+   - Vérifiez la validité du token JWT
+
+## 📞 Support
+
+Pour toute question ou problème :
+1. Consultez la documentation
+2. Vérifiez les logs serveur
+3. Contactez le support technique
