@@ -189,6 +189,7 @@ Ouvrez `index.html` dans votre navigateur
 - Vue d'ensemble des médecins, patients et rendez-vous
 - Gestion des médicaments
 - Export des données
+  <img width="599" alt="image" src="https://github.com/user-attachments/assets/c2639291-6488-459d-bbc1-6a6c33f0d383" />
 
 ### Interface Médecin
 - Calendrier des rendez-vous
@@ -196,6 +197,8 @@ Ouvrez `index.html` dans votre navigateur
 - Gestion des prescriptions
 - Historique des consultations
 - Notes sur les patients
+  <img width="603" alt="image" src="https://github.com/user-attachments/assets/991219e0-bbe2-447a-a554-dd7f62f68a1a" />
+
 
 ### Interface Patient
 - Vue calendrier de ses rendez-vous
@@ -203,8 +206,10 @@ Ouvrez `index.html` dans votre navigateur
 - Historique médical
 - Gestion de ses accompagnateurs
 - Prise de rendez-vous
+  <img width="305" alt="image" src="https://github.com/user-attachments/assets/d61dacc9-3dad-4f23-ac24-792c8bd43d9d" />
 
-### Interface Accompagnateur
+
+### Interface 
 - Liste des patients suivis
 - Calendrier des rendez-vous
 - Alertes médicaments
