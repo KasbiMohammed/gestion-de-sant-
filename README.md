@@ -3,7 +3,6 @@
 Un système complet de gestion de santé permettant la gestion des patients, médecins, rendez-vous et médicaments.
 
 
-
 ### Page de connexion
 - Interface de connexion sécurisée
 - Validation des champs email/mot de passe
