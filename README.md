@@ -43,7 +43,7 @@ health-management/
 
 1. **Cloner le projet**
 ```bash
-git clone [votre-repo]
+git clone https://github.com/KasbiMohammed/gestion-de-sant-/tree/main
 cd [nom-du-dossier]
 ```
 
