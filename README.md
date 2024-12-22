@@ -2,10 +2,9 @@
 
 Un système complet de gestion de santé permettant la gestion des patients, médecins, rendez-vous et médicaments.
 
-## 🖥️ Captures d'écran
+
 
 ### Page de connexion
-<img width="316" alt="image" src="https://github.com/user-attachments/assets/6445403e-fce6-4664-8f98-1ccd9f20fd06" />
 - Interface de connexion sécurisée
 - Validation des champs email/mot de passe
 - Messages d'erreur clairs
@@ -134,13 +133,13 @@ CREATE TABLE appointment (
 
 -- Insertion des données de test
 INSERT INTO user (email, password, role) VALUES
-('admin@test.com', 'password123', 'admin'),
-('doctor1@test.com', 'password123', 'doctor'),
-('doctor2@test.com', 'password123', 'doctor'),
-('patient1@test.com', 'password123', 'patient'),
-('patient2@test.com', 'password123', 'patient'),
-('accompanist1@test.com', 'password123', 'accompanist'),
-('accompanist2@test.com', 'password123', 'accompanist');
+('admin@test.com', 'admin', 'admin'),
+('doctor1@test.com', 'doctor', 'doctor'),
+('doctor2@test.com', 'doctor', 'doctor'),
+('patient1@test.com', 'patient', 'patient'),
+('patient2@test.com', 'patient', 'patient'),
+('accompanist1@test.com', 'accompanist', 'accompanist'),
+('accompanist2@test.com', 'accompanist', 'accompanist');
 ```
 
 4. **Configurer l'application**
@@ -170,10 +169,10 @@ Ouvrez `index.html` dans votre navigateur
 
 | Rôle | Email | Mot de passe |
 |------|-------|--------------|
-| Admin | admin@test.com | password123 |
-| Médecin | doctor1@test.com | password123 |
-| Patient | patient1@test.com | password123 |
-| Accompagnateur | accompanist1@test.com | password123 |
+| Admin | admin@test.com | admin |
+| Médecin | doctor@test.com | doctor |
+| Patient | patient@test.com | patient |
+| Accompagnateur | accompanist@test.com | accompanist |
 
 ## 🖥️ Interfaces
 
@@ -183,12 +182,15 @@ Ouvrez `index.html` dans votre navigateur
 - Gestion des erreurs de connexion
 - Animation de chargement pendant l'authentification
 
+<img width="316" alt="image" src="https://github.com/user-attachments/assets/6445403e-fce6-4664-8f98-1ccd9f20fd06" />
+
 ### Interface Administrateur
 - Tableau de bord avec statistiques
 - Gestion complète des utilisateurs (CRUD)
 - Vue d'ensemble des médecins, patients et rendez-vous
 - Gestion des médicaments
 - Export des données
+  
   <img width="599" alt="image" src="https://github.com/user-attachments/assets/c2639291-6488-459d-bbc1-6a6c33f0d383" />
 
 ### Interface Médecin
@@ -197,6 +199,7 @@ Ouvrez `index.html` dans votre navigateur
 - Gestion des prescriptions
 - Historique des consultations
 - Notes sur les patients
+  
   <img width="603" alt="image" src="https://github.com/user-attachments/assets/991219e0-bbe2-447a-a554-dd7f62f68a1a" />
 
 
@@ -206,6 +209,7 @@ Ouvrez `index.html` dans votre navigateur
 - Historique médical
 - Gestion de ses accompagnateurs
 - Prise de rendez-vous
+  
   <img width="305" alt="image" src="https://github.com/user-attachments/assets/d61dacc9-3dad-4f23-ac24-792c8bd43d9d" />
 
 
